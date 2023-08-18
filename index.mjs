@@ -26,8 +26,6 @@ export const handler = async (event) => {
 
   // Si no hay error hasta ahora, se realizan más verificaciones
   if (!error) {
-    // Divide el valor de 'groups' en una matriz de grupos individuales
-    //const grupos = data.groups.split(",");
 
     // Define una expresión regular para validar el formato de los grupos (números positivos separados por comas)
     const regex = /^(?:[1-9]\d*|0)(?:,[1-9]\d*|,0)*$/;
